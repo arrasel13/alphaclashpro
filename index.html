@@ -86,16 +86,16 @@
 
                   <!-- life score Start -->
                    <div class="flex justify-between w-3/4">
-                        <button class="btn bg-[#894189] border-[#894189] rounded-full text-white px-7 text-xl bg-[url('img/life_btn_bg.png')] bg-no-repeat bg-left bg-contain">
+                        <button class="btn bg-[#894189] hover:bg-[#894189] border-[#894189] rounded-full text-white px-7 text-xl bg-[url('img/life_btn_bg.png')] bg-no-repeat bg-left bg-contain">
                             Life
                             <img src="img/heart.svg" alt="">
-                            <span>1</span>
+                            <span id="current-life">5</span>
                         </button>
 
-                        <button class="btn bg-[#360490] border-[#360490] rounded-full text-white px-7 text-xl">
+                        <button class="btn bg-[#360490] hover:bg-[#360490] border-[#360490] rounded-full text-white px-7 text-xl">
                             Score
                             <img src="img/dollar.svg" alt="">
-                            <span>1</span>
+                            <span id="current-score">0</span>
                         </button>
                    </div>
                   <!-- life score End -->
@@ -107,11 +107,12 @@
         <section id="score" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 border border-[#FFFFFF33] rounded-2xl bg-[url('img/score_bg.png')] bg-no-repeat bg-left bg-contain">
                 <div class="text-white text-center space-y-6 p-11 rounded-2xl bg-gradient-to-tl from-[#98979700] to-[#FFFFFF8f]">
+                    <h4 class="text-xl inline-flex border border-[#FFFFFF33] px-3 py-1 rounded-full shadow-md">Game Over!</h4>
                     <h1 class="text-8xl">
                         <span class="font-extrabold">Score:</span>
-                        <span>14</span>
+                        <span id="final-score">14</span>
                     </h1>
-                    <button class="btn">Play Again</button>
+                    <button onclick="play()" class="btn">Play Again</button>
                     <p class="text-white">Practice will make you Pro</p>
                 </div>
             </div>
